@@ -28,13 +28,14 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
+          // maxWidth: `var(--size-content)`,
+          // padding: `var(--size-gutter)`,
         }}
       >
         <main>{children}</main>
         <footer
           style={{
+            padding: `var(--size-gutter)`,
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}

@@ -71,34 +71,43 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="hero-component">
     <Container>
-      <Row xs="2">
-        <Col>
+      <Row>
+        <Col xs="12" lg="6" order={{ sm: "last", md: "first" , lg: "first", lx:"first"}}>
           <div className="hero">
+            <div className="d-flex flex-column btn-container d-sm-flex d-lg-none d-xl-none">
+            <h2 className="hero-title">
+              <span className="principal-color">Biitbot, </span>
+              a un mensaje de tu inventario.
+            </h2>
+            <p className="text">
+            ¡Obtén información de productos e inventario en tiempo real con nuestro bot de WhatsApp!
+            </p>
+            </div>
+            <div className="btn-container d-none d-sm-block">
             <h2 className="hero-title">
               Con <span className="principal-color">ChatBot</span>, automatizar
               el servicio al cliente{" "}
               <span className="principal-color">es muy fácil</span>
             </h2>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat.
+            ¡Obtén información de productos e inventario en tiempo real con nuestro bot de WhatsApp! Con nuestro bot fácil de usar, puedes obtener rápidamente precios, disponibilidad y detalles de productos.
             </p>
-            <div className="btn-container">
-              <Button className="btn-primary">¡Quiero probarlo!</Button>
-              <Button className="btn-secondary">Demo</Button>
+            </div>
+            <div className="btn-container d-none d-sm-flex"  order={{ sm: "first", md: "last" , lg: "last", lx:"last"}}>
+              <Button className="btn-test">¡Quiero probarlo!</Button>
+              <Button className="btn-demo">Demo</Button>
             </div>
           </div>
         </Col>
-        <Col lg='6'>
+        <Col xs="12" lg="6">
           <div className="image-container">
             <StaticImage
-              src="../images/bittbot.png"
+              src="../images/bot-1.png"
               className="hero-image"
               loading="eager"
-              quality={50}
+              quality={100}
               width={600}
               formats={["auto", "webp", "avif"]}
               breakpoints={[750, 1080, 1366, 1920]}
@@ -107,6 +116,10 @@ const IndexPage = () => (
               backgroundColor="transparent"
             />
           </div>
+            <div className="d-flex flex-column btn-container d-sm-flex d-lg-none d-xl-none">
+              <Button className="btn btn-test">¡Quiero probarlo!</Button>
+              <Button className="btn btn-demo">Demo</Button>
+            </div>
         </Col>
       </Row>
     </Container>
@@ -118,6 +131,6 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="BittBot" />
 
 export default IndexPage
