@@ -44,7 +44,7 @@ const IndexPage = () => (
             ¡Obtén información de productos e inventario en tiempo real con nuestro bot de WhatsApp! Con nuestro bot fácil de usar, puedes obtener rápidamente precios, disponibilidad y detalles de productos.
             </p>
             </div>
-            <div className="btn-container d-none d-sm-flex">
+            <div className="btn-container show-mobile d-sm-flex">
               <Button className="btn-test">¡Quiero probarlo!</Button>
               <Button className="btn-demo">Demo</Button>
             </div>
@@ -65,10 +65,11 @@ const IndexPage = () => (
               backgroundColor="transparent"
             />
           </div>
-            <div className="d-flex flex-column btn-container d-sm-flex d-lg-none d-xl-none">
+            {/* <div className="btn-container">
+              sss
               <Button className="btn btn-test">¡Quiero probarlo!</Button>
               <Button className="btn btn-demo">Demo</Button>
-            </div>
+            </div> */}
         </Col>
       </Row>
     </Container>

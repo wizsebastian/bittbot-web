@@ -13,6 +13,17 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
+import '../style.scss'
+
+const customStyles = {
+  position: "fixed",
+  top: "56px",
+  bottom: "0",
+  left: "0",
+  right: "0",
+  background: "#4e2386",
+  zIndex: "1030"
+};
 
 function Header(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +32,10 @@ function Header(args) {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar {...args} className="navbar">
         <NavbarBrand href="/">Biitbot</NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse isOpen={isOpen} navbar style={customStyles}>
           <Nav className="me-auto" navbar>
             <NavItem>
               <NavLink href="/components/">Components</NavLink>
@@ -46,7 +57,7 @@ function Header(args) {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>Sitio web en construcción</NavbarText>
         </Collapse>
       </Navbar>
     </div>
