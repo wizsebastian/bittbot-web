@@ -222,3 +222,17 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+
+.footer{
+  background: #200554;
+}
+.footer h6{
+  color: #FFF !important
+}
+.footer a{
+  color: #FFF !important
+}
+.footer p{
+  color: #FFF !important
+}
