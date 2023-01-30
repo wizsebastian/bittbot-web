@@ -1,0 +1,46 @@
+.mini-card-gray {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+
+    .cicle-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .circle-purple {
+            width: 52px;
+            height: 52px;
+            border-radius: 50px;
+            background-color: #45108A;
+        }
+    }
+    a{
+        align-items: initial;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .mini-card-gray {
+        h4{
+            text-align: initial;
+        }
+    }
+}

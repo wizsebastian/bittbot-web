@@ -1,0 +1,74 @@
+.banner-subscribe {
+    background: #250556;
+    padding-top: 126px;
+    padding-bottom: 126px;
+
+    .title-container {
+        margin-bottom: 50px;
+
+        h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+    }
+
+    .form {
+        border-radius: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        flex-wrap: wrap;
+        width: 328px;
+
+        input {
+            background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #FFFBFE;
+            margin-bottom: 30px;
+            border-radius: 28px;
+        }
+
+        button {
+            width: 116px;
+            align-items: center;
+            padding: 11px 27px;
+            gap: 10px;
+            height: 49px;
+            background: #FFF;
+            color: #45108A;
+            border-radius: 245px;
+            border: none
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-subscribe {
+        padding-top: 66px;
+        padding-bottom: 66px;
+
+        .form {
+            width: 100% !important;
+
+            button {
+                width: 100% !important;
+
+            }
+        }
+
+        .title-container {
+            h2 {
+                font-size: 35px;
+                line-height: 42px;
+            }
+        }
+    }
+}
