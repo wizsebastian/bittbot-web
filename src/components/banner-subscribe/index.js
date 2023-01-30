@@ -18,6 +18,7 @@ const BannerSubscribe = () => {
                 </Col>
                 <Col xs="12" lg="6" >
                     <div className='form'>
+                        <h3>Completa tus datos</h3>
                         <Input
                             type="text"
                             placeholder="Nombre"
